@@ -12,5 +12,11 @@
 
 @font-face {
     font-family: "Jost";
-    src:(src\assets\Jost-VariableFont_wght.ttf);
+    src:(src/assets/Jost-VariableFont_wght./ttf);
 }
+
+canvas{
+    position: fixed;
+    top: 0;
+}
+
