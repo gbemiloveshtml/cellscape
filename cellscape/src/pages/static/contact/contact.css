@@ -21,3 +21,12 @@ form {
         padding: 20px 20px 20px 20px; 
     }
 }
+
+
+p{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:120px auto;
+}

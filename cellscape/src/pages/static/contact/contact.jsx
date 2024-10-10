@@ -1,9 +1,14 @@
 import { TextInput, Textarea, SimpleGrid, Group, Title, Button } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import './contact.css'
+import { useForm as useMantineForm } from '@mantine/form';
+import { useForm as useFormspree, ValidationError } from '@formspree/react';
+import './contact.css';
 
 export default function GetInTouchSimple() {
-  const form = useForm({
+  // Formspree setup for form submission
+  const [state, handleSubmit] = useFormspree("xdkonqdj");
+
+  // Mantine form setup for field validation
+  const form = useMantineForm({
     initialValues: {
       name: '',
       email: '',
@@ -11,14 +16,19 @@ export default function GetInTouchSimple() {
       message: '',
     },
     validate: {
-      name: (value) => value.trim().length < 2,
-      email: (value) => !/^\S+@\S+$/.test(value),
-      subject: (value) => value.trim().length === 0,
+      name: (value) => value.trim().length < 2 ? 'Name must have at least 2 characters' : null,
+      email: (value) => !/^\S+@\S+$/.test(value) ? 'Invalid email' : null,
+      subject: (value) => value.trim().length === 0 ? 'Subject is required' : null,
     },
   });
 
+  // Display success message after form submission
+  if (state.succeeded) {
+    return <p>Thanks for your message!</p>;
+  }
+
   return (
-    <form onSubmit={form.onSubmit(() => {})}>
+    <form onSubmit={handleSubmit}>
       <Title
         order={2}
         size="h1"
@@ -36,12 +46,22 @@ export default function GetInTouchSimple() {
           variant="filled"
           {...form.getInputProps('name')}
         />
+        <ValidationError 
+          prefix="Name" 
+          field="name" 
+          errors={state.errors}
+        />
         <TextInput
           label="Email"
           placeholder="Your email"
           name="email"
           variant="filled"
           {...form.getInputProps('email')}
+        />
+        <ValidationError 
+          prefix="Email" 
+          field="email" 
+          errors={state.errors}
         />
       </SimpleGrid>
 
@@ -53,6 +73,12 @@ export default function GetInTouchSimple() {
         variant="filled"
         {...form.getInputProps('subject')}
       />
+      <ValidationError 
+        prefix="Subject" 
+        field="subject" 
+        errors={state.errors}
+      />
+
       <Textarea
         mt="md"
         label="Message"
@@ -64,11 +90,15 @@ export default function GetInTouchSimple() {
         variant="filled"
         {...form.getInputProps('message')}
       />
+      <ValidationError 
+        prefix="Message" 
+        field="message" 
+        errors={state.errors}
+      />
 
       <Group justify="center" mt="xl">
-        <Button type="submit" size="md" style={{ backgroundColor: '#EF233C'}}>
-            Send Message
-         
+        <Button type="submit" size="md" style={{ backgroundColor: '#EF233C' }} disabled={state.submitting}>
+          Send Message
         </Button>
       </Group>
     </form>
