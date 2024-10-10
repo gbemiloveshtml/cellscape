@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import About from './about';
-import Contact from './contact'
+import { NavLink, Route, Link, useHref} from 'react-router-dom';
+import About from '../about/about';
+import Contact from '../contact'
+
+
 import './Navbar.css';
 
 
@@ -9,16 +11,21 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <div className = "navbar">
-
-        <img src="src\assets\logo2.png"  alt="CellScape Logo" className='logo' />
+      <Link to="http://localhost:5173/"><img src="src\assets\logo2.png"  alt="CellScape Logo" className='logo' /></Link>
+        <nav>
+          <ul>
+              <li>  
+                <NavLink to="/"  className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "active" : ""
+  }
+                
+                >Home</NavLink>
+                <NavLink to ="/about" >About</NavLink>
+                <NavLink to ="/contact"  >Contact</NavLink>
+              </li>
+          </ul>
+        </nav>
        
-        <ul>
-            <li>  
-              <Link to ="/about">About</Link>
-              <Link to ="/contact">Contact</Link>
-            </li>
-        </ul>
-        
       
     </div>
   )

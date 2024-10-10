@@ -2,17 +2,19 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Jost";
+    
+   
 }
 
 .container{
     width: 100vw;
     min-height: 100vh;
-    background-color: #EDF2F4;
+
 }
 
 @font-face {
     font-family: "Jost";
-    src:(src/assets/Jost-VariableFont_wght./ttf);
+    src: url('./src/assets/Jost-VariableFont_wght.ttf') format('truetype');
 }
 
 canvas{

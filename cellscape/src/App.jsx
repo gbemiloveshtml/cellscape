@@ -1,40 +1,38 @@
+
 import React from 'react'
 import * as THREE from 'three';
 import { useState, Suspense } from 'react'
-import { Routes, Route, Router, BrowserRouter} from "react-router-dom"
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
-import RedBloodCell from './assets/Redbloodcell';
-import About from './pages/static/navbar/about';
-
+import { Routes, Route, BrowserRouter} from "react-router-dom"
+import About from './pages/static/about/about';
 import Navbar from './pages/static/navbar/navbar'
-import Contact from './pages/static/navbar/contact';
+import Contact from './pages/static/contact';
+import Home from './pages/home';
+import '@mantine/core/styles.css';
 
 
 const App = () => {
   const [count, setCount ] = useState(0)
   return (
     <div className = "container">
-      <BrowserRouter>
-        <Navbar/>
+     
+        <Navbar />
+
+        
         <Routes>
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
+          <Route exact path="/" element={<Home />} />
+          <Route  path="/about" element={<About />} />
+          <Route  path="/contact" element={<Contact />} />
         </Routes>
-      </BrowserRouter>
 
-
-
-
-      <Canvas>
-          <RedBloodCell />
-      
-      </Canvas>
+  
 
       
  
     </div>
-  )
-}
+  )}
+
+
+
+
 
 export default App
