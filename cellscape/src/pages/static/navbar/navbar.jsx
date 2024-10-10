@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Route, Link, useHref} from 'react-router-dom';
 import About from '../about/about';
-import Contact from '../contact'
+import Contact from '../contact/contact'
 
 
 import './Navbar.css';

@@ -4,8 +4,9 @@ import * as THREE from 'three';
 import { useState, Suspense } from 'react'
 import { Routes, Route, BrowserRouter} from "react-router-dom"
 import About from './pages/static/about/about';
+import Contact from './pages/static/contact/contact'
 import Navbar from './pages/static/navbar/navbar'
-import Contact from './pages/static/contact';
+
 import Home from './pages/home';
 import '@mantine/core/styles.css';
 
