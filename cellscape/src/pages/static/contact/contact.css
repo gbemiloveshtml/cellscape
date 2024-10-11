@@ -23,10 +23,11 @@ form {
 }
 
 
-p{
+.contact_p{
     font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin:120px auto;
 }
+
