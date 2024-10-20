@@ -5,10 +5,10 @@ body{
     
 }
 .full-screen {
-    height: 85vh; 
+    height: 114vh; 
     width: 100%;   
     margin: 0;
-    padding: 0;
+    padding-bottom: 0px;
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -20,7 +20,7 @@ body{
     position: relative;
     width:100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 .main{
@@ -38,12 +38,14 @@ body{
     gap:10px;
     color:#E71300;
     text-align: center;
+    padding-bottom:325px;
     
 }
 .main-text{
     text-align: center;
     color: #E71300;
     font-size:100px;
+
 
 }
 
