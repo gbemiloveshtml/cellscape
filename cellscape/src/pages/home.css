@@ -51,14 +51,31 @@ body{
 
 .content {
     width: 100%;
-    margin: 2rem auto;
+    margin-bottom: 2rem ;
+    margin-left:2rem ;
+    margin-right:2rem ;
+    margin-top: 0rem;
     padding: 1rem;
 }
 
 section{
-    height: 65vh;
+    height: 60vh;
     margin-bottom: 100px;
     
+
+}
+
+.title{
+    font-size:50px;
+    margin-top: 100px;
+    margin-bottom: 280px;
+    color: #E71300;
+    text-align: center;
+}
+
+.link{
+    text-decoration: #E71300;
+  
 
 }
 
@@ -66,6 +83,8 @@ section{
     width:700px;
     height:auto;
 }
+
+
 
 .text-image{
     display: flex;
@@ -93,4 +112,20 @@ p{
 
 .reveal-type{
     padding:15px 15px 0px 15px;
+}
+
+
+a.links{
+    color: #E71300;
+}
+
+a:hover{
+    color:#EDF2F4;
+    text-decoration-color: #EDF2F4;
+}
+
+.links-bottom{
+        text-decoration: underline;
+        text-decoration-color: #E71300;
+        text-decoration-line: underline;
 }
