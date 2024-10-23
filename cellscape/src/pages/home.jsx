@@ -1,17 +1,24 @@
-import React, { useState, useLayoutEffect, useRef } from "react";
+import React, { useState, useLayoutEffect, useRef, useEffect } from "react";
 import "../pages/home.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Lenis from "lenis";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
+import "pace-js"
+import "../pages/loading-bar.css"
+
+
 
 
 const Home = () => {
-
+    
+    
     window.onbeforeunload = function (){
         window.scrollTo(0,0)
     }
+
+
     //gsap scroll trigger
     gsap.registerPlugin(ScrollTrigger)
     const splitTypes = document.querySelectorAll('.reveal-type')
@@ -41,12 +48,6 @@ const Home = () => {
     })
 
     
-
-
-
-
-
-
 
 
 
@@ -97,10 +98,14 @@ const Home = () => {
 
     requestAnimationFrame(raf)
 
+  
+      
+
 
     return (
-        <div className="top" ref={comp}>
+        <div className="top home" ref={comp}>
 
+      
             {/*Scroll */}
 
 

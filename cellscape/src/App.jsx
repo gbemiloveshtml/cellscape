@@ -7,14 +7,12 @@ import Contact from './pages/static/contact/contact'
 import Navbar from './pages/static/navbar/navbar'
 import Home from './pages/home';
 import '@mantine/core/styles.css';
-import "pace-js"
-import '../src/pages/loading-bar.css'
-
 
 
 
 function App() {
   const [count, setCount] = useState(0)
+  
 
   return (
     <div>
