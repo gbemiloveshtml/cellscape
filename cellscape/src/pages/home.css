@@ -61,6 +61,7 @@ body{
 section{
     height: 60vh;
     margin-bottom: 100px;
+    margin-left:20px;
     
 
 }
@@ -90,6 +91,7 @@ section{
     display: flex;
     flex-direction: row;
     align-items: center;
+
    
 }
 
@@ -103,6 +105,7 @@ h1{
 
 .header{
     font-size: 45px;
+   
     
 }
 
@@ -128,4 +131,6 @@ a:hover{
         text-decoration: underline;
         text-decoration-color: #E71300;
         text-decoration-line: underline;
+        margin-right:50px;
+        text-align: center;
 }

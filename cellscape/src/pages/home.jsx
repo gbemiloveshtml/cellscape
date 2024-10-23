@@ -2,10 +2,10 @@ import React, { useState, useLayoutEffect, useRef } from "react";
 import "../pages/home.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
 import Lenis from "lenis";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
+
 
 const Home = () => {
 
@@ -206,13 +206,46 @@ const Home = () => {
 
             
                 
+               
+
+
+                <section>
+                <h1 className="reveal-type header">
+                         Get Involved
+                    </h1>
+                    <div className="text-image">
+                    <p >
+                    If you would like to get more involved or would like to make a donation to spread awarenesss on Sickle Cell Anemia
+                    </p>
+                    <ul >
+                        <li className="links-bottom"><a href="https://www.scdfc.org/">https://www.scdfc.org/</a></li>
+                        <li className="links-bottom"><a href="https://www.sicklecelldisease.org/">https://www.sicklecelldisease.org/</a></li>
+                        <li className="links-bottom"><a href="https://www.fscdr.org/">https://www.fscdr.org/</a></li>
+                        <li className="links-bottom"><a href="https://www.sicklecelltx.org/">https://www.sicklecelltx.org/</a></li>
+                    </ul>
+                    </div>
+                </section>
+
+                <section>
+                <h1 className="reveal-type header">
+                         How Much Did You Know?
+                    </h1>
+                    <div className="text-image">
+                    <p >
+                    how much
+                    </p>
+                    </div>
+                </section>
+
+
+
                 <section>
                 <h1 className="reveal-type header">
                          Completed
                     </h1>
                     <div className="text-image">
                     <p >
-                    This was a basic overview into sickle cell. If you would like to gain more info about sickle cell and how it works biology-wise, here are some great links.
+                    This was a basic overview into sickle cell. If you would like to gain more info about sickle cell and dive deeper into how it works. Look through these links on the right.
                     </p>
                     <ul >
                         <li className="links-bottom"><a href="https://www.sparksicklecellchange.com/sickle-cell-genetics">https://shorturl.at/HdmlI</a></li>
