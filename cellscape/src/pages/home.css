@@ -59,15 +59,15 @@ body{
 }
 
 section{
-    height: 60vh;
-    margin-bottom: 100px;
- 
-    
 
-    
+    margin-bottom: 100px;
+
 
 }
 
+.quiz{
+    height:80vh;
+}
 
 
 
@@ -139,9 +139,11 @@ a:hover{
 }
 
 .links-bottom{
-        text-decoration: underline;
+        list-style: none;
+        text-decoration: none;
         text-decoration-color: #E71300;
         text-decoration-line: underline;
         margin-right:50px;
         text-align: center;
+        font-size: 30px;
 }

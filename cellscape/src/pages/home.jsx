@@ -142,8 +142,10 @@ const Home = () => {
                     </h1>
                     <div className="text-image">
                     <p className="reveal-type">
-                    This is a red blood cell, also known as an Erythrocyte. They transport nutrients and gas throughout the body. They live to around 120 days. The shape of a blood cell allows it to be able to navigate the cardiovascular system easily.
+                    Red blood cells (RBCs), also called erythrocytes, are specialized cells that transport oxygen throughout the body. They are shaped like biconcave discs—flat and round with a slight indentation in the center—which increases their surface area for efficient gas exchange. These cells contain hemoglobin, a protein that binds to oxygen and gives blood its red color. Red blood cells are produced in the bone marrow and have a lifespan of about 120 days. Their flexibility allows them to travel through narrow capillaries, ensuring oxygen reaches every part of the body and supporting vital functions.
                     </p>
+
+
                     <img  className="blood-cell img" src="src/assets/bloodcell.png"/>
                     </div>
                     </div>
@@ -156,7 +158,7 @@ const Home = () => {
                     </h1>
                     <div className="text-image">
                     <p className="reveal-type">
-                    This is also a red blood cell. It also transports nutrients and gas throughout the body. However, here's the difference, it only lives to 60 days and has a quite abnormal shape, doesn't it?
+                    This is also a red blood cell. It also transports nutrients and gas throughout the body. However, here's the difference, it only lives to 60 days and it has a quite abnormal shape, doesn't it? It has a crescent shape due to a genetic mutation.
                     </p>
                     <img  className="sickle-cell img" src="src/assets/sickle-cell.png"/>
                     </div>
@@ -169,7 +171,7 @@ const Home = () => {
                     </h1>
                     <div className="text-image">
                     <p className="reveal-type">
-                    This is caused by this change in DNA, specifically in the HBB, aka the hemoglobin gene.Glutamic Acid(Glu), an amino acid is replaced by another amino acid, Valine(Val), which is how a normal red blood cell now changes to a sickle cell.
+                    This is caused by this mutation in DNA, specifically in the HBB, aka the hemoglobin gene.Glutamic Acid(Glu), an amino acid is replaced by another amino acid, Valine(Val), which is how a normal red blood cell now changes to a sickle cell.
                     </p>
                     <img  className="reveal-type" src="src/assets/gene-change.png"/>
                     </div>
@@ -182,7 +184,7 @@ const Home = () => {
                     </h1>
                     <div className="text-image">
                     <p className="reveal-type">
-                    People with sickle cell anemia inherit hemoglobin gene trait S from both parents. Those that only inherit from one parent have sickle cell trait, and can pass sickle cell anemia on if their partner has at least one S trait.
+                    People with sickle cell anemia inherit hemoglobin gene trait S from both parents. Those that only inherit from one parent have sickle cell trait, and can pass sickle cell anemia on if their partner has at least one S trait. Understanding this inheritance pattern is crucial for families when planning for the future or seeking genetic counseling.
                     </p>
                     <img  className="trait"src="src/assets/trait.png"/>
                     </div>
@@ -195,7 +197,8 @@ const Home = () => {
                          What's bad about it?
                     </h1>
                     <p className="reveal-type">
-                    Due to oxygen being cut off due to blockage caused by the sickle cells, the person feels immense pain and is unable to move for hours, days, sometimes weeks and even months.<a className="links"href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8217144/#:~:text=Chronic%20pain%20in%20SCD%20can,report%20nearly%20daily%20chronic%20pain.&text=In%20the%20child%20and%20adolescent,with%2035%25%20having%20pain%20daily.">Around 30% of people with Sickle Cell state that they feel pain daily.</a> If you think you can imagine the pain, you can not. Oxygen can be cut off anywhere in the body: legs, brain, heart, lungs, and more. This could lead to death.
+                    The shape makes the cells less flexible which means they stick to blood vessel walls and block normal blood flow. This reduces oxygen flow to cell.s
+                    Due to oxygen being cut off due to blockage, it means that the person goes through immense pain that could span from hours to weeks.<a className="links"href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8217144/#:~:text=Chronic%20pain%20in%20SCD%20can,report%20nearly%20daily%20chronic%20pain.&text=In%20the%20child%20and%20adolescent,with%2035%25%20having%20pain%20daily.">Around 30% of people with sickle cell state that they feel pain daily.</a> If you think you can imagine the pain, you can not. Oxygen can be cut off anywhere in the body: legs, brain, heart, lungs, and more and could even eventually lead to death.
                     </p>
                 </section>
 
@@ -206,7 +209,7 @@ const Home = () => {
                          Treatments
                     </h1>
                     <p className="reveal-type">
-                    DHydration, hydroxreau, bone marrow treatment, and a recently developed treatment CRISPR. 
+                    Sickle Cell Anemia has no cure. Treating sickle cell anemia focuses on managing symptoms, preventing complications, and improving quality of life. Common treatments include hyrdoxuryea, blood transfusions, and pain management.Bone marrow and stem cell transplants could be a cure, but are high risk and expensive. <a className= "links" href="https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease">Fortunately, in December 2023, the FDA approved the first cell based gene therapies: Casgevy and Lyfgenia.</a>
                     </p>
                 </section>
 
@@ -221,7 +224,7 @@ const Home = () => {
                     </h1>
                     <div className="text-image">
                     <p >
-                    If you would like to get more involved or would like to make a donation to spread awarenesss on Sickle Cell Anemia
+                    If you would like to get more involved or would like to make a donation to spread awarenesss on Sickle Cell Anemia, please take a look at the websites on the right to aid millions of people.
                     </p>
                     <ul >
                         <li className="links-bottom"><a href="https://www.scdfc.org/">https://www.scdfc.org/</a></li>
@@ -232,7 +235,7 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section>
+                <section className="quiz">
                     <div className="text-image">
                     <Quiz />
                     </div>
