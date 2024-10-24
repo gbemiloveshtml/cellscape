@@ -14,7 +14,7 @@ const Navbar = () => {
       <Link to="http://localhost:5173/"><img src="src\assets\logo2.png"  alt="CellScape Logo" className='logo' /></Link>
         <nav>
           <ul>
-              <li>  
+              <li className='nav'>  
                 <NavLink to="/"  className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "active" : ""
   }

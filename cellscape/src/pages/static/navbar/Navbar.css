@@ -18,7 +18,7 @@
  
 }
 
-ul{
+ul.nav{
     flex: 1;
     list-style: none;
     text-align: end;
@@ -27,7 +27,7 @@ ul{
  
 }
 
- li{
+.nav{
     display: inline-block;
     font-size: 25px;
     cursor: pointer;
@@ -42,7 +42,7 @@ a{
     margin:10px 20px;
 }
 
-.navbar li a:hover {
+.navbar .nav a:hover {
     color: #E71300; 
   }
 

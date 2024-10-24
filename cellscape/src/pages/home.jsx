@@ -5,8 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Lenis from "lenis";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
-import "pace-js"
-import "../pages/loading-bar.css"
+import Quiz from "./quiz";
 
 
 
@@ -155,10 +154,12 @@ const Home = () => {
                 <h1 className="reveal-type header">
                          Sickle Cell
                     </h1>
+                    <div className="text-image">
                     <p className="reveal-type">
                     This is also a red blood cell. It also transports nutrients and gas throughout the body. However, here's the difference, it only lives to 60 days and has a quite abnormal shape, doesn't it?
                     </p>
-                    
+                    <img  className="sickle-cell img" src="src/assets/sickle-cell.png"/>
+                    </div>
                 </section>
                 
              
@@ -232,20 +233,15 @@ const Home = () => {
                 </section>
 
                 <section>
-                <h1 className="reveal-type header">
-                         How Much Did You Know?
-                    </h1>
                     <div className="text-image">
-                    <p >
-                    how much
-                    </p>
+                    <Quiz />
                     </div>
                 </section>
 
 
-
+                {/*}
                 <section>
-                <h1 className="reveal-type header">
+                <h1 className="reveal-type header complete">
                          Completed
                     </h1>
                     <div className="text-image">
@@ -259,6 +255,7 @@ const Home = () => {
                     </ul>
                     </div>
                 </section>
+                {*/}
                 
             </div>
         </div>
